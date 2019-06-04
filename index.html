@@ -19,7 +19,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    
 </head>
 
 <body>
@@ -29,17 +29,19 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <div class="userGuess"> Guezz:</div>
+                        <h1><span id="finalTotal">Your Guess:</span></h1>
+                        
                     </div>
                 </div>
             </div>
 
             <!--winning box-->
-            
+
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <div class="winningNum"> Winning #</div>
+                        <h1><span id="randomNumber">Winning Number: </span></h1>
+                        
                     </div>
                 </div>
             </div>
@@ -47,41 +49,37 @@
             <!--crystal 1-->
             <div class="row">
                 <div class="col-sm-3">
-                    <div class="card" style="width: 14rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                    <div class="card"  id="one" style="width: 14rem; height: 11rem;">
+                        <img src="./assets/images/crystal1.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <span class="crystal1"></span>
                         </div>
                     </div>
                 </div>
                 <!--crystal 2  -->
                 <div class="col-sm-3">
-                    <div class="card" style="width: 14rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                    <div class="card" id="two"style="width: 14rem; height: 11.5rem; padding: 25px 5px;">
+                        <img src="./assets/images/crystal2.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <span class="crystal2"></span>
                         </div>
                     </div>
                 </div>
                 <!--crystal 3-->
                 <div class="col-sm-3">
-                    <div class="card" style="width: 14rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                    <div class="card" id="three"style="width: 14rem; height: 11.5rem;">
+                        <img src="./assets/images/crystal3.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <span class="crystal3"></span>
                         </div>
                     </div>
                 </div>
                 <!--crystal 4-->
                 <div class="col-sm-3">
-                    <div class="card" style="width: 14rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                    <div class="card" id="four"style="width: 14rem; height: 12rem;">
+                        <img src="./assets/images/crystal4.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <span class="crystal4"></span>
                         </div>
                     </div>
                 </div>
@@ -91,13 +89,40 @@
 
             </div>
             <!--wins/losses-->
-            
+            <div class="row">
+
+                <div class="col-sm-4 offset-4">
+                    <div class="card" style="width: 14rem; height: 7rem;">
+
+                        <div class="card-body">
+                            <h2>wins:</h2>
+                                <span id="numberWins"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-sm-4 offset-4">
+                <div class="card" style="width: 14rem; height: 7rem;">
+
+                    <div class="card-body">
+                        <h2>losses:</h2>
+                            <span id="numberLosses"></span>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
 
     </div>
 
-
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/game.js"></script>
 </body>
 
 </html>
